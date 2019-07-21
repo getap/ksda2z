@@ -1,0 +1,46 @@
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: $color-left-bg;
+    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
+    border: 2.45px solid $color-right-bg;
+    border-radius: 6px; 
+    
+    position: relative;
+
+}
+
+.section-left {
+    width: 50%;
+    height: 100%;
+    padding: 2.5rem;
+
+//    display: table-cell;
+}
+
+.section-right {
+    width: 50%;   
+    height: 100%; 
+    background-color: $color-right-bg;
+    padding: 2.5rem;
+    border: none;
+
+    position: absolute;
+    top:0;
+    right: 0;
+    
+}
+
+// SERIVICE-HEADING
+.service-heading {
+    padding: 1.5rem 0;
+    color: $color-blue-dark;
+    position: relative;
+}
+
+.left-navigation {
+    height: 40rem;
+    width: 50rem;
+    margin: 0 auto;
+    padding-top: 1.5rem; 
+}

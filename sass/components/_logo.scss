@@ -1,0 +1,14 @@
+.logo-box {
+    animation: moveInTop 0.5s ease-out 1s backwards;   
+    backface-visibility: hidden;
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+        }
+    }
+    &__logo {
+        height: 3rem;
+    }
+}

@@ -1,0 +1,65 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+    &__list {
+        list-style: none;
+        height: 10rem;
+        width: 10rem;
+        margin-top: 0;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        margin-bottom: 4rem;
+ 
+    }  
+
+    &__link {
+        
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-blue-dark;
+            padding: 1rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0.8rem 2rem rgba($color-black, .15);
+            background-color: #ffffff;
+            
+        }
+
+        &:active {
+            transform: scale(1.05);
+            box-shadow: 0 0.5rem 1.5rem rgba($color-black, .15);
+        }
+
+    }
+
+    &__icon {
+        height: 6.5rem;
+        width: 6.5rem;
+        
+        
+        &--obj {
+            margin-right: -2.5rem;
+        }
+        &--tele {
+            margin-left: 0.5rem;
+        }
+  
+    }
+    
+    &__text {
+        font-size: 1.3rem;
+    }
+
+}
