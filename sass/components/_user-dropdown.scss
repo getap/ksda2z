@@ -1,58 +1,92 @@
 .user-dropdown {
     position: absolute;
-    top: 2rem;
-    right: -2.5px;
-    transition: all 0.2s;
+    top: auto;
+    right: -0.2rem;
+    animation: moveFromRight 0.5s cubic-bezier(1, 0, 0, 1) 0.6s backwards;
+    
+    &__checkbox-input {
+        display: none;
+    }
+    &__button {
+        height: 3.5rem;
+        width: 3.5rem;
+        background-color: transparent;
+        display: inline-block;
+        position: absolute;
+        top: 0rem;
+        right: 1.2rem;
+        border-radius: 100px;
+        transition: width 0.2s;
+        z-index: 100;
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    &__checkbox-input:checked ~ &__button {
+        right: 9rem;
+    }
 
     &__icon-box {
-        width: 5rem;
+        display: inline-block;
         background-color: #fff;
-        padding: 0.5rem;
+        height: 3.5rem;
+        width: 5rem;
+        box-shadow: 0 0.5rem 2rem rgba($color-black, .3);
         border-top-left-radius: 100px;
         border-bottom-left-radius: 100px;
-        box-shadow: 0 0.5rem 2rem rgba($color-black, .3); 
-        transition: all 0.2s;
+        transition: width 0.2s;  
 
-    }    
-
-    &:hover &__icon-box {
-        width: 13rem;
+    }  
+    &__checkbox-input:checked ~ &__icon-box {
+        width: 12.8rem;
     }
     &__user-icon {
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2.7rem;
+        width: 2.7rem;
         vertical-align: middle;
+        position: absolute;
+        top: 0.4rem;
+        right: 1.8rem;
+        transition: all 0.2s;
     }
-
-    &:hover &__name {
-        
+    &__checkbox-input:checked ~ &__icon-box > &__user-icon {
+        right: 9.6rem;
+    }
+    &__user-name {
+        display: none;
+    }
+    
+    &__checkbox-input:checked ~ &__user-name {
+        display: inline-block;
         font-size: 1.5rem;
         font-weight: bold;
         color: $color-primary;
-        padding-left: 0.4rem;
-        vertical-align: middle;
+        min-width: 9rem;
+        position: absolute;
+        top: 0.6rem;
+        right: 0rem;
+        animation: nameRotate 0.5s  cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s backwards;
+        backface-visibility: hidden;
     }
 
+    &__list {
+        display: none;
+    }
 
-    &__item {
+    &__checkbox-input:checked ~ &__list {
+        min-width: 10rem; 
         background-color: #fff;
         display: inline-block;
         padding: 1rem;
-        // border-bottom-left-radius: 6px;
-
-        // border-bottom-right-radius: 6px;
-        border-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
         box-shadow: 0 1.5rem 1rem rgba($color-black, .1);
         margin-top: -0.5rem;
-
         position: absolute;
-        top: 3.8rem;
+        top: 3.9rem;
         right: 0;
-
-        opacity: 0;
-        visibility: hidden;
+        animation: expandMenuToBottom 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s backwards;
       }
-    &__list {
+    &__item {
         list-style: none;
         padding: 0 0.5rem; 
         transition: all 0.1s ease-out;
@@ -70,11 +104,11 @@
         &:link,
         &:visited {
             text-decoration: none;
-            color: $color-gray; 
+            color: $color-primary; 
         }
         
     }
-    &__list > &__link:hover {
+    &__item > &__link:hover {
         color: $color-blue-dark;
     }
 
