@@ -1,0 +1,59 @@
+.footer-min {
+    background-color: red;
+    //display: inline-block;
+    width: 85%;
+    //height: 2rem;
+    margin: 0 auto;
+    transform: translateY(-2.3rem);
+    border-radius: 6px 6px 0 0;
+    border: 2.5px solid $color-right-bg;
+    overflow: hidden;
+    
+    &__list {
+        display: inline-block;
+        list-style: none;
+        width: 90%;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 4px 0 0 0;    
+
+    }
+    &__item {
+        display: inline-block;
+        font-size: 1.3rem;
+        font-family: $font-main;
+        font-weight: 500;
+        line-height: 1;
+        padding: 0.2rem 1rem;
+        background-color: red;
+
+        position: relative;
+        &:not(:last-child) {
+            margin-right: 3rem;
+
+        } 
+
+    }
+    &__copyright {
+        //display: inline-block;
+        font-size: 2.6rem;
+        font-family: $font-main;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+
+    &__icons-list {
+        display: inline-block;
+        list-style: none;
+        background-color: yellow;
+    }
+    &__icon-item {
+        display: inline-block;
+
+    }
+    &__icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}

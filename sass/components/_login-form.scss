@@ -1,0 +1,115 @@
+.login-form {
+    margin-top: 2.5rem;
+    // background-color: red;
+}
+.form-box {
+    display: block;
+    font-family: $font-main; 
+    //background-color: red;
+    position: relative;
+    max-width: 100%;
+    height: 4.3rem;
+    margin-bottom: 3.5rem;
+
+    
+
+    &__input {
+        display: inline-block;
+        width: 95%;
+        height: 4.3rem;
+        padding: 1rem 1.5rem;
+        font-family: $font-main;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: $color-blue-dark;
+        border-radius: 4px;
+        border-bottom: 2px solid $color-blue-dark; 
+        background-color: $color-left-bg;
+        border: 2px solid $color-blue-dark;
+        box-shadow: 0 0.6rem 2rem rgba($color-blue-dark, 0.3);
+        transition: all 0.2s;
+        
+   
+        &:focus {
+            outline: none;
+            box-shadow: 0 0.6rem 2rem rgba($color-blue-dark, 0.3);
+            width: 100%;
+            border-bottom: 2px solid $color-blue-dark;
+            font-size: 1.6rem;
+            font-weight: 500;
+            -moz-appearance: number-input;
+            -webkit-appearance: number-input;
+        } 
+
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+    }
+    &__label {
+        display: inline-block;
+        min-width: 3.8rem;
+        font-family: $font-main;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background-color: $color-left-bg;
+        line-height: 1;
+        color: $color-blue-dark;
+
+        transform: translate(1.3rem,-5.3rem);
+        transition: all 0.2s;
+
+   
+    }
+
+    &__input:placeholder-shown + &__label {
+        transform: translate(1.7rem,-2.7rem);
+        visibility: hidden;
+        opacity: 0;
+
+    }
+    
+
+    &__icon {
+        display: inline-block;
+        height: 1.4rem;
+        width: 1.4rem;
+        fill: $color-grey-dark-2;
+        
+        position: absolute;
+        top: 1.4rem;
+        right: 2.5rem;
+        transition: all 0.2s;
+
+        &--lock {
+            height: 1.9rem;
+            width: 1.9rem;
+            right: 2.3rem; 
+            top: 1.2rem;
+
+        }
+    }
+
+    &__input:focus ~ &__icon {  
+        right: 1rem;    
+
+        &--lock {
+            right: 0.5rem;
+        }
+    }
+    &__forgot-pw {
+
+        &:link,
+        &:visited {
+            color: $color-primary;
+            font-family: $font-main;
+            font-weight: normal;
+            float: right;
+            margin-right: 1.8rem;
+            padding: 0.3rem;
+            text-decoration: none;
+        }
+            
+    }
+
+}

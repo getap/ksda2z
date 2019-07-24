@@ -1,0 +1,63 @@
+.btn-cta {
+    font-size: 1.7rem;
+    border: none;
+    background-color: $color-blue-dark;
+    color: $color-white;
+    padding: 1rem 3rem;
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    border-radius: 4px;
+    margin-bottom: 2.8rem;
+    outline: none;
+    transition: all 0.2s;
+    box-shadow: 0 0.6rem 1.5rem rgba($color-blue-dark, 0.2);
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0.5rem 2rem rgba($color-blue-dark, 0.2);
+    }
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.6rem 1.5rem rgba($color-blue-dark, 0.2);
+    }
+}
+
+.btn {
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        font-family: $font-main;
+        font-weight: 500;
+        display: block;
+        text-decoration: none;
+        background-color: #fff;
+        color: $color-blue-dark;
+        width: 95%;
+        padding: 1rem 3rem;
+        border-radius: 4px;
+        text-align: center;
+        transition: all 0.2s;
+    }
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0.5rem 2rem rgba($color-blue-dark, 0.2);
+    }
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.6rem 1.5rem rgba($color-blue-dark, 0.2);
+    }
+
+}
+
+
+.arrow {
+    font-size: 2rem;
+    display: inline-block;
+    transform: translateX(1rem);
+    transition: all 0.2s;
+}
+.btn-cta:hover > .arrow {
+    animation: arrowInfinit 0.6s 3 backwards;
+}

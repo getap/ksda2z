@@ -1,36 +1,38 @@
 .container {
     height: 100%;
     width: 100%;
-    background-color: $color-left-bg;
-    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
-    border: 2.45px solid $color-right-bg;
-    border-radius: 6px; 
-    
-    position: relative;
-
+    border-radius: 6px;
+   // background-color: $color-left-bg;
+    box-shadow: 0 0.7rem 2rem rgba($color-black, 0.3);
+    border: 2.5px solid $color-right-bg;
+    background-image: linear-gradient(to left, rgba($color-right-bg, 1) 50%, rgba($color-left-bg, 1) 50%);
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }    
     //overflow: hidden;
-
 }
 
 .section-left {
+    display: inline-block;
     width: 50%;
     height: 100%;
     padding: 2.5rem;
-
-//    display: table-cell;
+    border-radius: 4px 0 0 4px;
+    background-color: $color-left-bg;
 }
 
-.section-right {
-    width: 50%;   
+// RIGHT SIDE ELEMENT IS A FLOAT LAYOUT
+.section-right {  
+    float: right;
+    width: 50%; 
     height: 100%; 
-    background-color: $color-right-bg;
     padding: 2.5rem;
-    border: none;
-
-    position: absolute;
-    top:0;
-    right: 0;
+    background-color: $color-right-bg;
     
+//POSTION for user dropdown  
+    position: relative;
 }
 
 // SERIVICE-HEADING
@@ -45,4 +47,16 @@
     width: 50rem;
     margin: 0 auto;
     padding-top: 1.5rem; 
+}
+
+.form-section {
+    width: 40rem;
+    margin: 0 auto;
+    //background-color: #fff;
+    padding: 3rem;
+
+    height: 50rem;
+}
+.footer {
+
 }

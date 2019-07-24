@@ -14,7 +14,6 @@
 <body>
     <div class="container">
         <div class="section-left">   
-   
             <div class="logo-box">
                 <a href="#" class="logo-box__link">
                     <img src="img/logo-ksd.png" alt="ksda2z.com" class="logo-box__logo">
@@ -104,21 +103,22 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> 
         </div> 
         
         
-        <div class="section-right">
+         <div class="section-right"> 
+         
             <div class="user-dropdown">
                 <input type="checkbox" id="chek" name="chek" class="user-dropdown__checkbox-input">
-                <label for="chek" class="user-dropdown__button"></label>
-                <!-- <span class="user-dropdown__bar">&nbsp;</span> -->                    
+                <label for="chek" class="user-dropdown__button"></label>              
                 <div class="user-dropdown__icon-box">
                     <svg class="user-dropdown__user-icon">
                         <use xlink:href="img/sprite.svg#icon-icon-user"></use> 
                     </svg>
                 </div>
                 <span class="user-dropdown__user-name">Jhon Smith</span>
+          
 
                 
                 <ul class="user-dropdown__list">
@@ -180,7 +180,91 @@
                 </ul>
                 
             </div>
-        </div>
+        
+            <div class="title-bar">
+                <div class="title-bar__login ut-title-active">Login</div>
+                <div class="title-bar__signup">Signup</div>
+            </div>    
+
+            <div class="form-section">
+                <div class="login-form">
+                    <form action="#">
+                        <div class="form-box">
+                            <input type="number" class="form-box__input" id="phone" name="phone" placeholder="Phone" required> 
+                            <label for="phone" class="form-box__label">Phone</label>
+                            <svg class="form-box__icon">
+                                <use xlink:href="img/sprite.svg#icon-phone1"></use>
+                            </svg>
+                        </div>
+                    
+                        <div class="form-box">
+                            <input type="password" class="form-box__input" id="password" name="password" placeholder="Password" required> 
+                            <label for="password" class="form-box__label">Password</label>
+                            <svg class="form-box__icon form-box__icon--lock">
+                                <use xlink:href="img/sprite.svg#icon-closed-lock"></use>
+                            </svg>
+                            <a href="" class="form-box__forgot-pw ut-margin-small">forgot password?</a>
+                        </div>
+                    
+                        <button type="submit" class="btn-cta">Next<span class="arrow">&rarr;</span></button>
+                     
+                    </form>
+                    <a href="" class="btn btn--signup">Create a new Account</a>
+        
+                </div>
+
+                <!-- <div class="login-form">
+                    <form action="#">
+                        <div class="form-box">
+                            <input type="text" class="form-box__input" id="name" name="name"" placeholder="Name" required> 
+                            <label for="name" class="form-box__label">Name</label>
+                            <svg class="form-box__icon">
+                                <use xlink:href="img/sprite.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                        <div class="form-box">
+                            <input type="number" class="form-box__input" id="phone" name="phone" placeholder="Phone" required> 
+                            <label for="phone" class="form-box__label">Phone</label>
+                            <svg class="form-box__icon">
+                                <use xlink:href="img/sprite.svg#icon-phone1"></use>
+                            </svg>
+                        </div>
+
+                        <div class="form-box">
+                            <input type="email" class="form-box__input" id="email" name="Email" placeholder="Email" required> 
+                            <label for="email" class="form-box__label">Email</label>
+                            <svg class="form-box__icon">
+                                <use xlink:href="img/sprite.svg#icon-at-symbol"></use>
+                            </svg>
+                        </div>
+
+                        <div class="form-box">
+                            <input type="password" class="form-box__input" id="password" name="password" placeholder="Password" required> 
+                            <label for="password" class="form-box__label">Password</label>
+                            <svg class="form-box__icon form-box__icon--lock">
+                                <use xlink:href="img/sprite.svg#icon-locked"></use>
+                            </svg>
+                        </div>
+
+                        <div class="form-box">
+                            <input type="password" class="form-box__input" id="password" name="password" placeholder="Password" required> 
+                            <label for="password" class="form-box__label">Password</label>
+                            <svg class="form-box__icon form-box__icon--lock">
+                                <use xlink:href="img/sprite.svg#icon-locked"></use>
+                            </svg>
+                        </div>
+
+                        <button type="submit" class="btn-cta">next</button>
+    
+                    </form>
+
+                </div> -->
+            </div>
+        </div> 
+
+
+
     </div>
 </body>
+
 </html>

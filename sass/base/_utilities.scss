@@ -1,0 +1,33 @@
+.ut-title-active {
+    color: #fff !important;
+    background-color: $color-blue-dark !important;
+
+    &::before {
+        content: "\00B7";
+        padding-right: 5px;
+        color: $color-white;
+        transition: all 0.2s;
+    }   
+    &::after {
+        content: "\00B7";
+        padding-left: 5px;
+        color: $color-white;
+        transition: all 0.2s;
+    }   
+}
+
+.ut-margin-smaller {
+    margin-bottom: 1rem !important;
+}
+.ut-margin-small {
+    margin-bottom: 2rem !important;
+}
+.ut-margin-medium {
+    margin-bottom: 4rem !important;
+}
+.ut-margin-big {
+    margin-bottom: 6rem !important;
+}
+.ut-margin-bigger {
+    margin-bottom: 8rem !important;
+}
