@@ -1,10 +1,10 @@
 .btn-cta {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     border: none;
     background-color: $color-blue-dark;
     color: $color-white;
-    padding: 1rem 3rem;
-    width: 95%;
+    padding: 0.8rem 3rem;
+    width: 100%;
     display: block;
     margin-right: auto;
     border-radius: 4px;
@@ -26,20 +26,28 @@
 .btn {
     &:link,
     &:visited {
-        font-size: 1.6rem;
+        font-size: 1.45rem;
         font-family: $font-main;
         font-weight: 500;
         display: block;
         text-decoration: none;
-        background-color: #fff;
-        color: $color-blue-dark;
-        width: 95%;
-        padding: 1rem 3rem;
+        width: 100%;
+        padding: 0.8rem 3rem;
         border-radius: 4px;
         text-align: center;
         transition: all 0.2s;
+
     }
     
+    &--signup {
+        color: $color-blue-dark;
+        background-color: rgba($color-left-bg, .8);
+        
+        &:hover {
+            background-color: rgba($color-left-bg, 1);
+
+        }
+    }
     &:hover {
         transform: translateY(-2px);
         box-shadow: 0 0.5rem 2rem rgba($color-blue-dark, 0.2);
@@ -48,6 +56,8 @@
         transform: translateY(-1px);
         box-shadow: 0 0.6rem 1.5rem rgba($color-blue-dark, 0.2);
     }
+
+
 
 }
 

@@ -12,6 +12,7 @@
         clear: both;
     }    
     //overflow: hidden;
+    position: relative;
 }
 
 .section-left {
@@ -21,6 +22,9 @@
     padding: 2.5rem;
     border-radius: 4px 0 0 4px;
     background-color: $color-left-bg;
+    border-bottom: 1px solid $color-right-bg;
+
+    
 }
 
 // RIGHT SIDE ELEMENT IS A FLOAT LAYOUT
@@ -39,6 +43,7 @@
 .service-heading {
     padding: 1.5rem 0;
     color: $color-blue-dark;
+
     position: relative;
 }
 
@@ -50,7 +55,7 @@
 }
 
 .form-section {
-    width: 40rem;
+    width: 38rem;
     margin: 0 auto;
     //background-color: #fff;
     padding: 3rem;
@@ -58,5 +63,10 @@
     height: 50rem;
 }
 .footer {
-
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
 }
+
+
