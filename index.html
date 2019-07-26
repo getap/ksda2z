@@ -13,14 +13,16 @@
 </head>
 <body>
     <div class="container">
+
+
+        <!-- \\\\\\\\\\\\\\\\\\\\ RIGHT SECTION/////////////////// -->
+
         <div class="section-left">   
-            <div class="logo-box">
-                <a href="#" class="logo-box__link">
-                    <img src="img/logo-ksd.png" alt="ksda2z.com" class="logo-box__logo">
-                </a> 
-            </div>
+  
+            <img src="img/logo-ksd.png" alt="ksda2z.com" class="logo">
+
             
-            <div class="service-heading ut-margin-small">
+            <div class="service-heading">
 
                 <h1 class="heading-primary">
                     <svg class="heading-icon">
@@ -29,14 +31,17 @@
                     Home
                 </h1>
                 <h2 class="heading-secondary">way of recharges!</h2>
-            </div>
+            </div> 
+
+
 
             <div class="left-navigation">
+
                 <ul class="nav">
                     <li class="nav__list">
                         <a href="#" class="nav__link">
                             <svg class="nav__icon nav__icon--obj">
-                                <use xlink:href="img/sprite.svg#icon-mobile-recharge"></use> 
+                                <use xlink:href="img/sprite.svg#icon-mobile_recharge"></use> 
                             </svg>
                             <span class="nav__text">Recharge</span>
                         </a>
@@ -44,7 +49,7 @@
                     <li class="nav__list">
                         <a href="#" class="nav__link">
                             <svg class="nav__icon nav__icon--obj">
-                                <use xlink:href="img/sprite.svg#icon-postpaid-bill"></use> 
+                                <use xlink:href="img/sprite.svg#icon-postpaid_bill"></use> 
                             </svg>
                             <span class="nav__text">Postpaid</span>
                         </a>
@@ -59,7 +64,7 @@
                     </li>
                     <li class="nav__list">
                         <a href="#" class="nav__link">
-                            <svg class="nav__icon nav__icon--tele">
+                            <svg class="nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-telephone"></use> 
                             </svg>
                             <span class="nav__text">Telephone</span>
@@ -83,7 +88,7 @@
                     </li>
                     <li class="nav__list">
                         <a href="#" class="nav__link">
-                            <svg class="nav__icon nav__icon--obj">
+                            <svg class="nav__icon nav__icon--fastag">
                                 <use xlink:href="img/sprite.svg#icon-fastag"></use> 
                             </svg>
                             <span class="nav__text">Fastag</span>
@@ -106,11 +111,15 @@
                         </a>
                     </li>
                 </ul>
+
             </div> 
+
         </div> 
         
         
-         <div class="section-right"> 
+        <!-- \\\\\\\\\\\\\\\\\\\\ RIGHT SECTION/////////////////// -->
+
+        <div class="section-right"> 
          
             <div class="user-dropdown">
                 <input type="checkbox" id="chek" name="chek" class="user-dropdown__checkbox-input">
@@ -121,8 +130,6 @@
                     </svg>
                 </div>
                 <span class="user-dropdown__user-name">Jhon Smith</span>
-          
-
                 
                 <ul class="user-dropdown__list">
                     <li class="user-dropdown__item">
@@ -184,13 +191,32 @@
                 
             </div>
         
-            <div class="title-bar">
-                <div class="title-bar__login ut-title-active">Login</div>
-                <div class="title-bar__signup">Signup</div>
-            </div>    
+            
+            <!--#################### RIGHT FORM  ##################### -->
+            
+            <!-- <div class="title-bar">
+                <div class="title-bar__title title-bar__title--left ut-title-active">Login</div>
+                <div class="title-bar__title title-bar__title--right">Signup</div>
+            </div>     -->
+            
+            <!-- <div class="title-bar">
+                <div class="title-bar__title title-bar__title--left">Login</div>
+                <div class="title-bar__title title-bar__title--right ut-title-active">Signup</div>
+            </div> -->
 
-            <div class="form-section">
-                <div class="login-form">
+            <!-- <div class="title-bar ut-margin-small-1">
+                <div class="title-bar__title title-bar__title--middle">otp verification</div>
+            </div> 
+             -->
+            
+
+            <!--\\\\\\\\\\\\\\\\\\\\\ FORM-SECTION  /////////////////////// -->
+            <!-- <div class="form-section">
+                
+                
+            <!--#################### LOGIN FORM  ##################### -->
+            <!--
+                <div class="input-form ut-margin-small">
                     <form action="#">
                         <div class="form-box">
                             <input type="number" class="form-box__input" id="phone" name="phone" placeholder="Phone" required> 
@@ -206,65 +232,106 @@
                             <svg class="form-box__icon form-box__icon--lock">
                                 <use xlink:href="img/sprite.svg#icon-closed-lock"></use>
                             </svg>
-                            <a href="" class="form-box__forgot-pw ut-margin-small">forgot password?</a>
+                            <a href="" class="form-box__forgot-pw">forgot password?</a>
                         </div>
                     
-                        <button type="submit" class="btn-cta">Next<span class="arrow">&rarr;</span></button>
+                        <button type="submit" class="btn-cta btn-cta--login">Login<span class="arrow">&rarr;</span></button>
                      
                     </form>
-                    <a href="" class="btn btn--signup">Create a new Account</a>
+                    <a href="" class="btn btn--already">Create a new Account</a>
         
                 </div>
+            -->    
 
-                <!-- <div class="login-form">
-                    <form action="#">
+            <!--#################### SIGN FORM  ##################### -->
+                <!-- 
+                <div class="input-form">
+                    <form action="#" class="">
                         <div class="form-box">
-                            <input type="text" class="form-box__input" id="name" name="name"" placeholder="Name" required> 
+                            <input type="text" class="form-box__input" id="name" name="name" placeholder="Name" required> 
                             <label for="name" class="form-box__label">Name</label>
                             <svg class="form-box__icon">
                                 <use xlink:href="img/sprite.svg#icon-person"></use>
                             </svg>
-                        </div>
+                        </div> 
                         <div class="form-box">
-                            <input type="number" class="form-box__input" id="phone" name="phone" placeholder="Phone" required> 
-                            <label for="phone" class="form-box__label">Phone</label>
-                            <svg class="form-box__icon">
-                                <use xlink:href="img/sprite.svg#icon-phone1"></use>
-                            </svg>
-                        </div>
-
-                        <div class="form-box">
-                            <input type="email" class="form-box__input" id="email" name="Email" placeholder="Email" required> 
+                            <input type="email" class="form-box__input" id="email" name="email" placeholder="Email" required> 
                             <label for="email" class="form-box__label">Email</label>
                             <svg class="form-box__icon">
                                 <use xlink:href="img/sprite.svg#icon-at-symbol"></use>
                             </svg>
                         </div>
-
                         <div class="form-box">
                             <input type="password" class="form-box__input" id="password" name="password" placeholder="Password" required> 
                             <label for="password" class="form-box__label">Password</label>
                             <svg class="form-box__icon form-box__icon--lock">
-                                <use xlink:href="img/sprite.svg#icon-locked"></use>
+                                <use xlink:href="img/sprite.svg#icon-closed-lock"></use>
                             </svg>
                         </div>
-
                         <div class="form-box">
-                            <input type="password" class="form-box__input" id="password" name="password" placeholder="Password" required> 
-                            <label for="password" class="form-box__label">Password</label>
+                            <input type="password" class="form-box__input" id="repassword" name="repassword" placeholder="Re-password" required> 
+                            <label for="repassword" class="form-box__label">Re-Password</label>
                             <svg class="form-box__icon form-box__icon--lock">
-                                <use xlink:href="img/sprite.svg#icon-locked"></use>
+                                <use xlink:href="img/sprite.svg#icon-closed-lock"></use>
                             </svg>
                         </div>
-
-                        <button type="submit" class="btn-cta">next</button>
-    
+                    
+                        <button type="submit" class="btn-cta btn-cta--signup">Next<span class="arrow">&rarr;</span></button>
+                     
+                        <a href="" class="btn btn--new">Already account</a>
                     </form>
+            
+                </div>  -->
 
-                </div> -->
-            </div>
+
+
+
+            <!--#################### OTP form  ##################### -->
+                <!--
+                <div class="input-form">
+
+                    <form action="#" class="">
+
+                        <div class="form-box">
+                            <input type="number" class="form-box__input form-box__input--max" maxlength="10" id="phonenumber" name="phonennumber" placeholder="phone Number" value="9876543210" required readonly> 
+                            <label for="phonennumber" class="form-box__label">Phone Number</label>
+                            <button type="button" class="edit__btn">
+                                <svg class="edit__btn-icon">
+                                    <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                                </svg> 
+                            </button>                     
+
+                        </div>
+                        <div class="form-box">
+                            <input type="number" class="form-box__input form-box__input--otp" id="otp" name="otp" placeholder="Enter Otp" required> 
+                            <label for="otp" class="form-box__label">OTP Here</label>
+                            <span class="otp-time ">59</span>
+ 
+                            <a href="" class="btn btn--resend">Resend</a>
+                        </div>
+                        <button type="submit" class="btn-cta btn-cta--login">Submit<span class="arrow">&rarr;</span></button>
+                    </form>
+                    
+                </div>
+                
+            </div> -->
+
+
+            <!--#################### USER-SECTION  ##################### -->
+
+          
+
+
+
+
         </div> 
 
+
+
+
+
+        
+        <!--#################### FOOTER  ##################### -->
         <footer class="footer">
             
             <!-- <div class="arrow-up">
@@ -310,14 +377,15 @@
             </div>
         
         
-            <!-- #########################FOOTER MAX############################################# -->
+            <!-- #########################   FOOTER MAX    ############################ -->
+
             <!--  
             <div class="footer-max">
-                <!-- <div class="arrow-down">
+                <!-- <div class="arrow-down" style="display:none">
                     <svg class="arrow-down-icon">
                         <use xlink:href="img/sprite.svg#icon-cheveron-outline-down"></use>
                     </svg>
-                </div> -->
+                </div>
                 <div class="footer-max__services">
                     <h4 class="footer-max__service-header">Mobile</h4>
                     <ul class="footer-max__operator-list">

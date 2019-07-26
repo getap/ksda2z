@@ -19,7 +19,7 @@
     display: inline-block;
     width: 50%;
     height: 100%;
-    padding: 2.5rem;
+   // padding: 2.5rem;
     border-radius: 4px 0 0 4px;
     background-color: $color-left-bg;
     border-bottom: 1px solid $color-right-bg;
@@ -48,10 +48,13 @@
 }
 
 .left-navigation {
-    height: 40rem;
-    width: 50rem;
+    //background-color: red;
+    height: 67%;
+    width: 72%;
     margin: 0 auto;
-    padding-top: 1.5rem; 
+
+    display: block;
+
 }
 
 .form-section {

@@ -1,18 +1,18 @@
-.login-form {
-    margin-top: 2.5rem;
+.input-form {
+    //margin-top: 2.5rem;
     // background-color: red;
 }
 .form-box {
     display: block;
     font-family: $font-main; 
     //background-color: red;
-    position: relative;
     max-width: 100%;
     height: 4.6rem;
     margin-bottom: 3.5rem;
+    position: relative;
 
     &__input {
-        display: inline-block;
+        display: block;
         width: 100%;
         height: 4.6rem;
         padding: 1rem 1.5rem;
@@ -26,7 +26,8 @@
         border: 2px solid $color-blue-dark;
         box-shadow: 0 0.6rem 2rem rgba($color-blue-dark, 0.3);
         transition: all 0.2s;
-        
+
+
    
         &:focus {
             outline: none;
@@ -40,15 +41,39 @@
             background-color: $color-left-bg;
 
         } 
-        // &:focus:invalid {
-        //     border: 2px solid orangered;             
-        // }
+ 
 
         &::-webkit-inner-spin-button {
             -webkit-appearance: none;
         }
 
+        &--max {
+            width: 85%;
+            border-radius: 4px 0 0 4px;
+            border: 2px solid $color-blue-dark;
+            
+            &:focus {
+                width: 85%;
+                font-weight: bold;
+                font-size: 1.4rem;
+        
+            }
+        }
+        &--otp {
+             width: 50%;
+             border-radius: 4px;
+
+             &:focus {
+                 width: 50%;
+                 font-weight: bold;
+                 font-size: 1.4rem;
+        
+             }
+         }
+
     }
+
+
     &__label {
         display: inline-block;
         min-width: 3.8rem;
@@ -66,17 +91,8 @@
         transform: translate(1.5rem, -5.6rem);
         transition: all .2s;
 
-        // visibility: hidden;
-        // opacity: 0;
-
     }
 
-    &__input:placeholder-shown + &__label {
-        transform: translate(1.8rem,-3.5rem);
-        visibility: hidden;
-        opacity: 0;
-
-    }
 
     &__icon {
         display: inline-block;
@@ -88,20 +104,40 @@
         top: 1.45rem;
         right: 1.2rem;
         transition: all 0.2s;
+    
 
         &--lock {
             height: 1.9rem;
             width: 1.9rem;
             right: 0.9rem;
         }
+
+        &--warning {
+            fill: #eb2e18;
+        }
+        &--for-half {
+            left: 45%;
+            transform: translateX(-50%)
+        }
+
+
+    }
+
+    &__input:placeholder-shown + &__label {
+        transform: translate(1.8rem,-3.5rem);
+        visibility: hidden;
+        opacity: 0;
     }
 
     &__input:focus ~ &__icon {  
         right: 0rem;    
-
     }
-    &__forgot-pw {
+    &__input:focus ~ &__icon--edit {  
+        right: 1.2rem;       
+    }
 
+    &__forgot-pw {
+        margin-bottom: 3rem;
         &:link,
         &:visited {
             color: $color-primary;
@@ -111,7 +147,24 @@
             padding: 0.2rem;
             text-decoration: none;
         }
+
+        &::after {
+            content: "";
+            display:  table;
+            clear: both
+        }
             
     }
 
 }
+
+.otp-time {
+    //background-color: red;
+    padding: 1px;
+    color: $color-grey-dark-2;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+

@@ -1,14 +1,4 @@
-.logo-box {
-    animation: moveInTop 0.4s ease-in-out 0.7s backwards;   
-    backface-visibility: hidden;
-
-    &__link {
-        &:link,
-        &:visited {
-            text-decoration: none;
-        }
-    }
-    &__logo {
-        height: 3rem;
-    }
+.logo {
+    margin: 2.5rem 0 0 2.5rem;
+    height: 3rem;
 }
