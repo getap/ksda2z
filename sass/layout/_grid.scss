@@ -1,35 +1,27 @@
-.rows {
+.row {
     max-width: $grid-width;
     margin: 0 auto;
 
-    &:not(:last-child) {
-        margin-bottom: $hori-gutter;
-    }
-    &::after {
-        content: "";
-        clear: both;
-        display: table;
-    } 
+    // background-color: red;
     
-}
 
-[class^="coloum-"] {
-    float: left;
+    
+    //background-color: red;
+    
+    &:not(:last-child){
+        margin-bottom: $gutter-horizontal;
+    }
 
-    &:not(:last-child) {
-        margin-right: $vertical-gutter;
+    [class^="col-"] {
+        float: left;
+        &:not(:last-child){
+            margin-right: $gutter-vertical;
+        }
+    }
+    @include clearfix;
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-vertical}) / 2);
+        //background-color: #fff;
     }
 }
-
-
-
-.coloum-1-of-2 {
-    width: calc((100% -  #{$vertical-gutter}) / 2);
-}
-.coloum-1-of-3 {
-    width: calc((100% - 2* #{$vertical-gutter} ) / 3);
-}
-.coloum-1-of-4 {
-    width: calc((100% - 3* #{$vertical-gutter}) / 4);
-}
-

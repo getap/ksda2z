@@ -1,4 +1,28 @@
-.logo {
-    margin: 2.5rem 0 0 2.5rem;
+.logo-box {
+    //background-color: red;
     height: 3rem;
+    //margin-left: 1rem;
+    display: inline-block;
+
+    &__logo-left {
+        height: 2.8rem;
+        vertical-align: middle;
+        margin-right: 0.6rem;
+
+        animation: moveToLeft 0.6s 0.7s backwards;
+    }
+    &__vertical-line {
+        display: inline-block;
+        height: 100%;
+        width: 1.7px;
+        vertical-align: middle;
+        background-color: $color-gray-2;
+    }
+    &__logo-right {  
+        height: 1.7rem;
+        vertical-align: middle;
+        margin-left: 0.6rem;
+
+        animation: moveToRight 0.6s 0.7s backwards;
+    }
 }

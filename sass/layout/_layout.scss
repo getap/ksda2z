@@ -1,75 +1,35 @@
-.container {
-    height: 100%;
-    width: 100%;
-    border-radius: 6px;
-   // background-color: $color-left-bg;
-    box-shadow: 0 0.7rem 2rem rgba($color-black, 0.3);
-    border: 2.5px solid $color-right-bg;
-    background-image: linear-gradient(to left, rgba($color-right-bg, 1) 50%, rgba($color-left-bg, 1) 50%);
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }    
-    //overflow: hidden;
-    position: relative;
-}
-
-.section-left {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-   // padding: 2.5rem;
-    border-radius: 4px 0 0 4px;
-    background-color: $color-left-bg;
-    border-bottom: 1px solid $color-right-bg;
-
+.header {
+    padding: 2rem; 
     
+    // position: relative;
+}
+.login-form {
+    // background-color: rebeccapurple;
+    width: 45rem;
+    padding: 2rem; 
+    margin: 0 auto;
+    border-radius: $radius-smaller;
+    box-shadow: 0 0px 1.5px rgba($color-black, 0.2);
 }
 
-// RIGHT SIDE ELEMENT IS A FLOAT LAYOUT
-.section-right {  
+.user-dropdown {
     float: right;
-    width: 50%; 
-    height: 100%; 
-    padding: 2.5rem;
-    background-color: $color-right-bg;
-    
-//POSTION for user dropdown  
-    position: relative;
 }
 
-// SERIVICE-HEADING
-.service-heading {
-    padding: 1.5rem 0;
-    color: $color-blue-dark;
-
-    position: relative;
-}
-
-.left-navigation {
-    //background-color: red;
-    height: 67%;
-    width: 72%;
+.services {
+    // background-color: red;
+    width: 70rem;
+    height: 45rem;
     margin: 0 auto;
-
-    display: block;
-
 }
 
-.form-section {
-    width: 38rem;
-    margin: 0 auto;
-    //background-color: #fff;
-    padding: 3rem;
-
+.recharge-section {
+    // background-color: red;
+    // width: $grid-width;
     height: 50rem;
-}
-.footer {
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-}
+    width: 100rem;
+    margin: 0 auto;
 
+    @include clearfix;
 
+}

@@ -1,37 +1,68 @@
 // MAIN COLOR
-$color-primary : #483896;
-$color-secondary: #009B99;
+$color-primary: #00bcb4;
+$color-secondary: #555960;
+
+$color-bg: #EBEDF3;
+
+$color-blue: #4285F4;
+$color-red: #FF4747;
+$color-yellow: #dbcb27;
+
+$color-gray-1:#8D8D8D;
+$color-gray-2: #6d6d6d; 
+$color-gray-3: #4d4d4d; 
+
 $color-blue-dark: #1A3953;
 
-// PANEL-BACKGROUND COLOR
-$color-left-bg: #EFF2F4;
-$color-right-bg: #69C6C5;
+$color-primary-white: #E8ECED;
+$color-secondary-white: #EFF2F4;
 
 $color-white: #FFFFFF;
 $color-white-light: #EEEEEE;
 $color-black: #000000;
 
-$color-grey-light-1: #faf9f9;
-$color-grey-light-2: #f4f2f2;
-$color-grey-light-3: #f0eeee;
-$color-grey-light-4: #ccc;
-
-$color-gray: #707070;
-$color-grey-dark-1: #333;
-$color-grey-dark-2: #777;
-$color-grey-dark-3: #999;
 
 $font-main: 'Google sans';
 $font-weight-regular: normal;
 $font-weight-medium: 500;
-$font-weight-bold: bold ;
+$font-weight-bold: bold;
+
+
+$radius-smaller: 2px;
+$radius-small: 3px;
+$radius-medium: 4px;
+$radius-heigh: 5px;
 
 
 
-$grid-width: 80%;
-$grid-height: 80%;
-$hori-gutter: 3rem;
-$vertical-gutter: 3rem;
+$grid-width: 120rem;
+$gutter-horizontal: 3rem;
+$gutter-vertical: 4rem;
 
+
+$left-side-margin: 2rem;
+
+
+
+/*
+
+#555960 - logo right
+#00bcb4; - logo left
+
+#4285F4; - 
+#FF4747;
+
+#EBEDF3;
+
+#6D6D6D;
+
+#FFFD51
+
+#dbcb27
+
+
+#27c3c2
+#333333
+*/
 
 

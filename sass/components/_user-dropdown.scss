@@ -1,129 +1,160 @@
-.user-dropdown {
-    position: absolute;
-    top: 2.5rem;
-    right: -0.2rem;
-    animation: moveFromRight 0.5s cubic-bezier(1, 0, 0, 1) 0.6s backwards;
+/////////////////near wallet/////////////////
+
+.user-wallet {
+    //background-color: $color-bg;
+    //  background-color: $color-primary;
+    display: inline-block;
+
+
+    position: relative;
+    top: 0.5rem;
+    right: 7rem;
+
+    transition: right 0.2s;
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 100px;
+            border: 2px solid $color-primary;
+            transition: right 0.2s;
+            
+        }
+        &:hover {
+            background-color: $color-white;
+        }
+    }
+
+    &__text {
+        font-size: 1.3rem;
+        font-family: $font-main;
+        font-weight: 500;
+        color: $color-gray-3;
+        vertical-align: middle;
+ 
+    }
+    &__icon {
+        height: 1.7rem;
+        width: 1.7rem;
+        vertical-align: middle;
+        fill: $color-gray-3;
+        margin-right: 0.5rem; 
+    }
+}
+
+/////////////////dropdown menu/////////////////
+
+.user-box {
+    position: relative;
     
-    &__checkbox-input {
+    &__user {
+        display: inline-block;
+        background-color: $color-bg;
+        box-shadow: 0 2px 5px rgba($color-black, 0.2);
+        border-radius: 2rem;
+        border: 2px solid $color-primary;
+
+        height: 4rem;
+        width: 4rem;
+
+        position: absolute; 
+        top: -0.5rem;
+        right: 0;
+
+        transition: width 0.2s, height 0.2s;
+        
+    }
+    
+    &__user-name { 
         display: none;
-    }
-    &__button {
-        height: 3.5rem;
-        width: 3.5rem;
-        background-color: transparent;
-        display: inline-block;
+        font-display: $font-main;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-primary;
+        padding: 0.5rem;
+        // min-width: 10rem;
+        
         position: absolute;
-        top: 0rem;
-        right: 1.2rem;
-        border-radius: 100px;
-        transition: width 0.2s;
-        z-index: 100;
-        opacity: 0;
-        transition: all 0.2s;
-    }
-    &__checkbox-input:checked ~ &__button {
-        right: 9rem;
-    }
-
-    &__icon-box {
-        display: inline-block;
-        background-color: #fff;
-        height: 3.5rem;
-        width: 5rem;
-        box-shadow: 0 0.5rem 2rem rgba($color-black, .3);
-        border-top-left-radius: 100px;
-        border-bottom-left-radius: 100px;
-        transition: width 0.2s;  
-
-    }  
-    &__checkbox-input:checked ~ &__icon-box {
-        width: 12.8rem;
+        top: 0.5rem;
+        left: 1rem;
+        animation: expandMenuToBottom 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s backwards;
+        backface-visibility: hidden;
     }
     &__user-icon {
         height: 2.7rem;
         width: 2.7rem;
         vertical-align: middle;
-        position: absolute;
-        top: 0.4rem;
-        right: 1.8rem;
-        transition: all 0.2s;
-    }
-    &__checkbox-input:checked ~ &__icon-box > &__user-icon {
-        right: 9.6rem;
-    }
-    &__user-name {
-        display: none;
-    }
-    
-    &__checkbox-input:checked ~ &__user-name {
-        display: inline-block;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: $color-primary;
-        min-width: 9rem;
-        position: absolute;
-        top: 0.6rem;
-        right: 0rem;
-        animation: nameRotate 0.5s  cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s backwards;
-        backface-visibility: hidden;
-    }
 
+        fill: #00bcb4;
+        position: absolute; 
+        top: 0.4rem;
+        right: 0.4rem;
+    }
+/////////////////dropdown list/////////////////
     &__list {
         display: none;
+        list-style: none;
+        min-width: 13rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 1.7rem;
+
+        position: absolute;
+        top: 1.5rem;
+        right: 0rem;
+        animation: expandMenuToBottom 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s backwards;
+    
     }
 
-    &__checkbox-input:checked ~ &__list {
-        min-width: 10rem; 
-        background-color: #fff;
-        display: inline-block;
-        padding: 1rem;
-        border-bottom-left-radius: 6px;
-        border-bottom-right-radius: 6px;
-        box-shadow: 0 1.5rem 1rem rgba($color-black, .1);
-        margin-top: -0.5rem;
-        position: absolute;
-        top: 3.9rem;
-        right: 0;
-        animation: expandMenuToBottom 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s backwards;
-      }
+
     &__item {
-        list-style: none;
-        padding: 0 0.5rem; 
-        transition: all 0.1s ease-out;
-        &:not(:last-child) {
-            margin-bottom: .8rem;
-        }
+        padding: 0.4rem 1rem;
+        transition: all 0.2s;
         &:hover {
-            transform: translateY(-2px);
+            transform: translateX(1px);
+          
         }
-        &:active {
-            transform: translateY(-1.3px);
-        }        
-    }
+    }   
+
     &__link {
         &:link,
         &:visited {
             text-decoration: none;
-            color: $color-primary; 
+            font-family: $font-main;
+            color: $color-gray-3;
+            font-weight: 500;
         }
-        
+        &:hover {
+            color: $color-primary;
+        }
     }
-    &__item > &__link:hover {
-        color: $color-blue-dark;
+    &__icon {
+        height: 1.6rem;
+        width: 1.6rem;
+        margin-bottom: -3px;
+        margin-right: 4px;
+        fill: $color-gray-3;
+
+    }
+/////////hover to effect/////////////
+    &:hover &__user {
+        width: 13rem;
+        height: 20rem;
+    }
+    &:hover &__user-name {
+        display: inline-block;
+    }
+    &:hover &__list {
+        display: inline-block;
+    }
+    &__link:hover &__icon {
+        fill: $color-primary;
     }
 
-    &__icon {
-        height: 1.55rem;
-        width: 1.55rem;
-        fill: currentColor;
-        vertical-align: middle;
-        margin-top: -0.3rem;
-    }
-    &__text {
-        font-weight: 500;
-        padding: 0.3rem;
-        font-size: 1.35rem;
-    }
 }
 
-
+.user-box:hover ~ .user-wallet {
+    right: 15rem;
+}

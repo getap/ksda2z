@@ -1,0 +1,44 @@
+.foot {
+    width: 100%;
+    font-family: $font-main;
+    font-weight: normal;
+    font-size: 1.3rem;
+    padding: 2px 0;
+    color: $color-gray-2;
+    box-shadow: 0 0 1.5px rgba($color-black, 0.2);
+
+    // background-color: #fff;
+   
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+    &__list {
+        list-style: none;
+    }
+    &__item {
+        display: inline-block;
+        padding: 0 1rem;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        &:hover {
+            border-top: 1px solid $color-gray-2;
+            color: $color-primary;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: currentColor;
+            text-decoration: none;
+        }
+
+    }
+}

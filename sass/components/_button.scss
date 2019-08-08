@@ -1,154 +1,86 @@
-.btn-cta {
-    font-size: 1.5rem;
-    border: none;
-    background-color: $color-blue-dark;
-    color: $color-white;
-    padding: 0.8rem 3rem;
-    display: block;
-    margin-right: auto;
-    border-radius: 4px;
-    margin-bottom: 2.8rem;
-    outline: none;
-    transition: all 0.2s;
-    box-shadow: 0 0.6rem 1.5rem rgba($color-blue-dark, 0.2);
-    
-    &--login {
-        width: 100%;
-    }
-    &--signup {
-        width: 35%;
-        float: right;
-    }
-    &--otp {
-        width: 42%;
-        float: right;
-    }
-    &:focus {
-        outline: none;
-    }
-
-
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 0.5rem 2rem rgba($color-blue-dark, 0.2);
-    }
-    &:active {
-        transform: translateY(-1px);
-        box-shadow: 0 0.6rem 1.5rem rgba($color-blue-dark, 0.2);
-    }
-}
-
-
-
-//################## SMALL BTN - EDIT-btn###############
-.edit__btn {
-    font-size: 1.5rem;
-    border: none;
-    background-color: $color-blue-dark;
-    color: $color-white;
-    //padding: 0.8rem 3rem;
-    display: block;
-    width: 15%;
-    height: 100%;
- 
-    border-radius: 0 4px 4px 0;
-
-    outline: none;
-    transition: all 0.2s;
-    box-shadow: 8px 0.6rem 1.5rem rgba($color-blue-dark, 0.2);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    &-icon {
-        height: 1.9rem;
-        width: 1.9rem;
-        fill: $color-white;
-        
-    }
-}
-
-
-
 //############## LINK BUTTON ##############
 
 .btn {
+    //  background-color:red;
     &:link,
     &:visited {
-        font-size: 1.45rem;
+        font-size: 1.6rem;
         font-family: $font-main;
         font-weight: 500;
-        display: block;
         text-decoration: none;
-        border-radius: 4px;
-        text-align: center;
-        transition: all 0.2s;
     }
-    &--already {
-        width: 100%;
-        color: $color-blue-dark;
-        background-color: rgba($color-left-bg, .8);
-        padding: 0.8rem 3rem;
-        
+    &--signup {
+        border-radius: $radius-smaller;
+        float: right;
+        padding: 0.4rem 1.8rem;
+        color: $color-primary;
+        background-image: linear-gradient(45deg, $color-primary 50%, transparent 0%);
+        background-size: 240% 100%;
+        border: 2px solid $color-primary;
+        transition: all 0.3s;
+        background-position: right bottom;
+
         &:hover {
-            background-color: rgba($color-left-bg, 1);
-            
+            background-position: left bottom;
+            color: $color-white;
+        }
+        &:active {
+            transform: translateY(1px);
         }
     }
-    
-    &--new {
-        width: 50%;
-        color: $color-blue-dark;
-        background-color: rgba($color-left-bg, .8);
-        padding: 0.9rem 0;
+
+
+    &--forgot {
+        font-size: 1.5rem;
+        color: $color-blue;
+        padding: 0.7rem 0.2rem;
+        border-bottom: 1.5px solid currentColor;
+        transition: all 0.2s;
+        
+        display: block;
+        width:13.8rem;
+
+        backface-visibility: hidden;
         
         &:hover {
-            background-color: rgba($color-left-bg, 1);
-            
-        }     
-
+            background-color: $color-blue;
+            color: $color-white;
+            transform: translateY(-1.5px);
+            box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
+        }
+        &:active {
+            transform: translateY(0.8px);
+            box-shadow: 0 0.3rem 0.7rem rgba($color-black, .2);
+        } 
     }
-
-    &--resend {
-        // float: right;
-        position: absolute;
-        top: -1.5rem;
-        right: 0;
-
-        width: 40%;
-        color: $color-blue-dark;
-        background-color: rgba($color-left-bg, .8);
-        padding: 1.3rem 0;
-        margin-top: 1.4rem;
-        &:hover {
-            background-color: rgba($color-left-bg, 1);
-            
-        }     
-
+    &--login-ac {
+        width: 13rem;
     }
-    
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 0.5rem 2rem rgba($color-blue-dark, 0.2);
+    &--otp {
+        width: 9rem;
     }
-    &:active {
-        transform: translateY(-1px);
-        box-shadow: 0 0.6rem 1.5rem rgba($color-blue-dark, 0.2);
-    }
-
 
 
 }
 
-.arrow {
-    font-size: 2rem;
-    display: inline-block;
-    transform: translateX(1rem);
-    transition: all 0.2s;
-}
-.btn-cta:hover > .arrow {
-    animation: arrowInfinit 0.6s 3 backwards;
-}
 
+.cta {
+    border: none;   
+    border-radius: $radius-smaller;
+    font-family: $font-main;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $color-white;     
+    padding: 0.8rem 4rem;
+    background-color: $color-primary;
+    cursor: pointer;
 
+    &:focus {
+        outline: none; 
+    }
+    &--login {
+        float: right;
+
+    }
+}
 
